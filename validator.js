@@ -1,7 +1,9 @@
 
 function validator(options){
     var formElement = document.querySelector(options.form)
-    console.log(options.form);
+    var inputElement = formElement.querySelector(options.rules.selector)
+    console.log(inputElement);
+
 }
 
 validator.isRequired = (selector) => {
@@ -9,6 +11,15 @@ validator.isRequired = (selector) => {
         selector,
          test: () => {
         
+        }
+    }
+}
+
+validator.isEmail = (selector) => {
+    return {
+        selector,
+        test: () => {
+
         }
     }
 }

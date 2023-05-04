@@ -484,9 +484,10 @@
     <script>
         validator({
             form: "#form-1",
-            validator: [
+            rules: [
                 validator.isRequired("#first-name"),
-                validator.isRequired("#last-name")
+                validator.isRequired("#last-name"),
+                validator.isEmail("#email")
 
             ]
         })
