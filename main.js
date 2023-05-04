@@ -14,7 +14,6 @@ closeElement.onclick = () => {
 }
 
 // slide show hero-section
-
 window.addEventListener("resize", () => {
     let slideIndex = 0;
     let widthDevice = window.innerWidth;
@@ -57,11 +56,7 @@ window.addEventListener("resize", () => {
     }
 })
 
-
-
-
 //slide show vervices-section
-
 window.addEventListener("resize", () => {
     let slideIndex = 0;
     let widthDevice = window.innerWidth;
@@ -109,7 +104,6 @@ window.addEventListener("resize", () => {
 })
 
 ////slide show tech-section
-
 window.addEventListener("resize", () => {
     let slideIndex = 0;
     let widthDevice = window.innerWidth;
@@ -153,7 +147,6 @@ window.addEventListener("resize", () => {
 })
 
 //slide show process-section
-
 window.addEventListener("resize", () => {
     let slideIndex = 0;
     let widthDevice = window.innerWidth;
@@ -181,7 +174,6 @@ window.addEventListener("resize", () => {
             slides();
         }
         function slides() {
-
             if (slideIndex >= slidesItem.length) {
                 slideIndex = 0
             }

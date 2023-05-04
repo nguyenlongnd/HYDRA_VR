@@ -433,7 +433,7 @@
                             <input id="comment" class="style-input " type="text" placeholder="Tell Us Something...">
                             <span class="form-message"></span>
                         </div>
-                        <span class="user-info-submit btn">
+                        <span id="submitForm" class="user-info-submit btn">
                             SEND TO HYDRA
                         </span>
 
@@ -495,8 +495,8 @@
                 validator.isPhoneNumber("#phone-number"),
                 validator.isRequired("#subject"),
                 validator.isRequired("#comment"),
-
-            ]
+            ],
+            submit: "#submitForm"
         })
     </script>
 </body>
