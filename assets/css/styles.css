@@ -530,6 +530,28 @@
     align-items: center;
     justify-content: center;
 }
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+.form-group-left{
+    margin-right: 12px;
+}
+.form-message{
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+}
+.form-group.invalid{
+    color: rgb(255, 105, 105);
+}
+.form-group.invalid input{
+    border: 2px solid rgb(255, 105, 105);
+}
+
 input:first-child{
     margin-right: 12px;
 }

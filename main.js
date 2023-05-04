@@ -70,15 +70,13 @@ window.addEventListener("resize", () => {
     const backIconElement = document.querySelectorAll(".services-back-icon")
     let slidesItem = document.querySelectorAll(".benefit-card")
 
-    console.log("slidesItem: ",slidesItem);
-
     if (widthDevice < 798 && widthDevice > 748) {
         for (let i = 0; i < slidesItem.length; i++) {
             slidesItem[i].style.display = "none"
         }
     }
     if (widthDevice < 768) {
-        
+
         for (let j = 0; j < nextIconElement.length; j++) {
             nextIconElement[j].onclick = () => {
                 slidesItem[slideIndex].style.display = "none"
@@ -163,15 +161,13 @@ window.addEventListener("resize", () => {
     const backIconElement = document.querySelectorAll(".back-icon-process-section")
     let slidesItem = document.querySelectorAll(".process-section-stage")
 
-    console.log("slidesItem: ",slidesItem);
-
     if (widthDevice < 798 && widthDevice > 748) {
         for (let i = 0; i < slidesItem.length; i++) {
             slidesItem[i].style.display = "none"
         }
     }
     if (widthDevice < 768) {
-        
+
         for (let j = 0; j < nextIconElement.length; j++) {
             nextIconElement[j].onclick = () => {
                 slidesItem[slideIndex].style.display = "none"

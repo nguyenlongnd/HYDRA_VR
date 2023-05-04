@@ -50,7 +50,8 @@ html,body{
     color: #fff;
     font-weight: 400;
     font-size: 14px;
-    margin-top: 36px;
+    margin-top: 40px;
+    width: 100%;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ccc;
