@@ -418,16 +418,20 @@
                         <div>
                             <div class="form-group form-group-left">
                                 <input id="email" class="style-input" type="text" placeholder="Email">
+                                <span class="form-message"></span>
                             </div>
                             <div class="form-group">
                                 <input id="phone-number" class="style-input" type="text" placeholder="Phone Number">
+                                <span class="form-message"></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <input id="subject" class="style-input " type="text" placeholder="Subject">
+                            <span class="form-message"></span>
                         </div>
                         <div class="form-group">
                             <input id="comment" class="style-input " type="text" placeholder="Tell Us Something...">
+                            <span class="form-message"></span>
                         </div>
                         <span class="user-info-submit btn">
                             SEND TO HYDRA
@@ -487,7 +491,10 @@
             rules: [
                 validator.isRequired("#first-name"),
                 validator.isRequired("#last-name"),
-                validator.isEmail("#email")
+                validator.isEmail("#email"),
+                validator.isPhoneNumber("#phone-number"),
+                validator.isRequired("#subject"),
+                validator.isRequired("#comment"),
 
             ]
         })
