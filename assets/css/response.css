@@ -143,7 +143,10 @@
     display: none;
    }
 
-
+   .process-section-body{
+    margin-top: 0px;
+    padding-bottom: 0px;
+   }
    .process-section-body-wrapper{
     justify-content: center;
    }
