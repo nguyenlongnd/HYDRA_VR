@@ -101,8 +101,15 @@
     .services-back-icon{
         display: block;
     }
-
-
+    .benefit-card{
+        margin: auto;
+    }
+    .services-benefit-exam-mobile{
+        display: block;
+    }
+    .services-section-benefit-example{
+        display: none;
+    }
     .tech-section-body ul{
         margin: auto;
         width: 256px;
@@ -111,13 +118,18 @@
         
     }
 
+    .tech-section-body-mobile{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: block;
+    }
+    .tech-section-body{
+        display: none;
+    }
     .tech-section-body ul li{
         display: none;
     }
-    .tech-section-iconDown,
-    .tech-section-iconDown-outer{
-        display: none;
-    }
+
     .back-icon-tech-section{
         display: block;
     }
@@ -135,9 +147,7 @@
    .process-section-body-wrapper{
     justify-content: center;
    }
-   .process-section-stage{
-    display: none;
-   }
+
    .process-section-backgroundImg{
     display: none;
    }
@@ -147,6 +157,25 @@
    .next-icon-process-section,
    .back-icon-process-section{
     display: block;
+   }
+   .process-section-body-mobile{
+    display: block;
+   }
+   .process-section-body-wrapper{
+    display: none;
+   }
+   .process-section-stage{
+    text-align: center;
+   }
+   .process-section-stage-number{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+
+   .user-info-section{
+    padding: 60px 70px;
    }
 
    .user-info-section-form div{
