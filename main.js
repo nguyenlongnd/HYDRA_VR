@@ -14,47 +14,49 @@ closeElement.onclick = () => {
 }
 
 // slide show hero-section
-window.addEventListener("resize", () => {
-    let slideIndex = 0;
-    let widthDevice = window.innerWidth;
-    const nextIconElement = document.querySelector(".next-icon")
-    const backIconElement = document.querySelector(".back-icon")
-    let slidesItem = document.querySelectorAll(".hero-contact-content")
+// window.addEventListener("resize", () => {
+//     let slideIndex = 0;
+//     let widthDevice = window.innerWidth;
+//     const nextIconElement = document.querySelector(".next-icon")
+//     const backIconElement = document.querySelector(".back-icon")
+//     let slidesItem = document.querySelectorAll(".hero-contact-content")
 
-    if (widthDevice < 798 && widthDevice > 758) {
-        for (let i = 0; i < slidesItem.length; i++) {
-            slidesItem[i].style.display = "none"
-        }
-    }
-    if (widthDevice < 768) {
-        nextIconElement.onclick = () => {
-            slidesItem[slideIndex].style.display = "none"
-            slideIndex++;
-            slides();
-        }
-        backIconElement.onclick = () => {
-            slidesItem[slideIndex].style.display = "none"
-            slideIndex--;
-            slides();
-        }
-        function slides() {
+//     if (widthDevice < 798 && widthDevice > 758) {
+//         for (let i = 0; i < slidesItem.length; i++) {
+//             slidesItem[i].style.display = "none"
+//         }
+//     }
+//     if (widthDevice < 769) {
+//         nextIconElement.onclick = () => {
+//             slidesItem[slideIndex].style.display = "none"
+//             slideIndex++;
+//             slides();
+//         }
+//         backIconElement.onclick = () => {
+//             slidesItem[slideIndex].style.display = "none"
+//             slideIndex--;
+//             slides();
+//         }
+//         function slides() {
 
-            if (slideIndex >= slidesItem.length) {
-                slideIndex = 0
-            }
-            if (slideIndex < 0) {
-                slideIndex = slidesItem.length
-            }
-            slidesItem[slideIndex].style.display = "flex"
-        }
-        slides()
-    }
-    if (widthDevice > 779) {
-        for (let i = 0; i < slidesItem.length; i++) {
-            slidesItem[i].style.display = "flex"
-        }
-    }
-})
+//             if (slideIndex >= slidesItem.length) {
+//                 slideIndex = 0
+//             }
+//             if (slideIndex < 0) {
+//                 slideIndex = slidesItem.length
+//             }
+//             slidesItem[slideIndex].style.display = "flex"
+//         }
+//         slides()
+//     }
+//     if (widthDevice > 769) {
+//         for (let i = 0; i < slidesItem.length; i++) {
+//             slidesItem[i].style.display = "flex"
+//         }
+//     }
+// })
+
+
 
 //slide show vervices-section
 window.addEventListener("resize", () => {

@@ -39,14 +39,20 @@
         padding-left: 68px;
         padding-right: 68px;
     }
-    .hero-contact ul li{
+    .hero-contact-desktop{
         display: none;
+    }
+    .hero-contact-mobile{
+        display: block;
     }
     .next-icon,
     .back-icon {
         display: block;
     }
     .hero-contact ul {
+        justify-content: center;
+    }
+    .hero-contact-content{
         justify-content: center;
     }
     .hero-contact-content img{
@@ -56,9 +62,7 @@
         font-size: 20px;
     }
     .about-section {
-        margin-top: 240px;
-
-        
+        margin-top: 240px;        
     }
     .intro-hydra-head span img{
         display: none;
